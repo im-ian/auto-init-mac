@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/hakun/.oh-my-zsh"
+export ZSH="/Users/$(whoami)/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -78,22 +78,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  fzf
-  fasd
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
-[[ -s /Users/hakun/.autojump/etc/profile.d/autojump.sh ]] && source /Users/hakun/.autojump/etc/profile.d/autojump.sh
+[[ -s /Users/$(whoami)/.autojump/etc/profile.d/autojump.sh ]] && source /Users/$(whoami)/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export FZF_DEFAULT_COMMAND='fd --type f'
+# export FZF_DEFAULT_COMMAND='fd --type f'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
