@@ -1,6 +1,6 @@
 ## Auto-Init-Mac
 Automatic provisioning tool for BeautySelection's backend developer on Max(OS X).  
-This script will install [some essential software](https://github.com/im-ian/auto-init-mac/blob/main/common.BrewFile) 
+This script will install [some essential software](https://github.com/beautyselection/auto-init-mac/blob/main/common.BrewFile) 
 and [oh-my-zsh shell](https://github.com/ohmyzsh/ohmyzsh) with [powerlevel10k theme](https://github.com/romkatv/powerlevel10k).  
 Please contribute this repository if you discover helpful tools or automations for everyone's efficiency.
 
@@ -19,11 +19,11 @@ chmod 755 install.sh
 
 [1] Back-End
 [2] Front-End
-choose your install type[1|2 or skip install]: 
+choose your install type[1|2 or skip install if not input.]: 
 ```
 
 ### Included software
-[See Brewfile](https://github.com/im-ian/auto-init-mac/blob/main/common.BrewFile)  
+[See Brewfile](https://github.com/beautyselection/auto-init-mac/blob/main/common.BrewFile)  
 For customizing software list, edit `Brewfile` before run `./install.sh`.  
 
 ### Testing
