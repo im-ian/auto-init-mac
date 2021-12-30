@@ -1,0 +1,6 @@
+brew "node"
+brew "nvm"
+brew "yarn"
+brew "bower"
+cask "firefox"
+cask "visual-studio-code"
