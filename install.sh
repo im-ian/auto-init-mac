@@ -26,5 +26,6 @@ chmod 755 ./zsh/install.sh
 eval "$(/opt/homebrew/bin/zsh shellenv)"
 ./zsh/install.sh
 chsh -s /bin/zsh
+echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 
 printf '\n\n🎉 Congrat! Your mac has been set up successfully for working with B.S!\n'
