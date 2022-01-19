@@ -18,12 +18,10 @@ elif [ "$type" = "2" ]; then
 fi
 
 # configure aws-cli
-eval "$(/opt/homebrew/bin/aws shellenv)"
 aws configure
 
 # configure zsh
 chmod 755 ./zsh/install.sh
-eval "$(/opt/homebrew/bin/zsh shellenv)"
 ./zsh/install.sh
 chsh -s /bin/zsh
 
