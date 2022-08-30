@@ -1,0 +1,10 @@
+brew "python3"
+brew "git"
+brew "kubectl"
+brew "pyenv"
+brew "black"
+brew "autojump"
+brew "tree"
+
+cask "dbeaver-community"
+cask "docker"

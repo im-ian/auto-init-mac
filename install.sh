@@ -3,7 +3,8 @@
 # choose type
 echo "[1] Back-End"
 echo "[2] Front-End"
-read -p "choose your install type[1|2 or skip install if not input.]: " type
+echo "[3] Data Engineer"
+read -p "choose your install type[1|2|3 or skip install if not input.]: " type
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -15,6 +16,8 @@ if [ "$type" = "1" ]; then
 	brew bundle --file=./BrewFile.be
 elif [ "$type" = "2" ]; then
 	brew bundle --file=./BrewFile.fe
+elif [ "$type" = "3" ]; then	
+	brew bundle --file=./BrewFile.de
 fi
 
 # configure aws-cli
