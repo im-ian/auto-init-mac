@@ -19,8 +19,7 @@ chmod 755 install.sh
 
 [1] Back-End
 [2] Front-End
-[3] Data Engineer
-choose your install type[1|2|3 or skip install if not input.]: 
+choose your install type[1|2 or skip install if not input.]: 
 ```
 
 ### Included software
